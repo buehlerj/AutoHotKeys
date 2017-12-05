@@ -22,3 +22,8 @@ return
 	Send, {up}{end}
 	clipboard = %ClipboardTempVar%
 return
+
+
+^+r::
+  Send, Looks good{!} RTM {:}thumbsup{:}
+return
