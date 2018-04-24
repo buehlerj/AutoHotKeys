@@ -25,5 +25,5 @@ return
 
 
 ^+r::
-  Send, Looks good{!} RTM {:}thumbsup{:}
+  Send, Looks good to me{!} RTM {:}thumbsup{:}
 return
