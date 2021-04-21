@@ -12,23 +12,21 @@ return
 	Send, !Dpw3wp{enter}
 return
 
-; Copy Line using ctrl + shift + c
-^+c::
-	ClipboardTempVar := clipboard
-	Send, {home}{home}
-	Send, {shift down}{down}{shift up}
-	Send, {ctrl down}cvv{ctrl up}
-	Send, {up}{up}{end}
-	clipboard = %ClipboardTempVar%
+; While in debug mode, have the debugger jump to the selected spot
+^+g::
+	Send, {appskey}
+	Send, n
 return
 
 
-; Opens, builds, and closes ECP_Root
-^+!e::
-	Run, %WorkspaceENV%\ECP_Root\ECP_Root.sln
-	Sleep, 5000
-	Send, {alt}BR
-	Sleep, 3000
-	Send, {alt down}{f4}{alt up}
+; While in debug mode, watch the variable you have selected
+^+w::
+	Send, {appskey}
+	Send, w
+return
+
+; Publish using ctrl + shift + p
+^+p::
+	Send, !Bh{enter}
 return
 
