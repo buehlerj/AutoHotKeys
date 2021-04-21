@@ -33,4 +33,3 @@ return
 	SetTimer, RemoveToolTip, Off
 	ToolTip
 return
-wer 
