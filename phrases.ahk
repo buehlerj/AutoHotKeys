@@ -12,3 +12,8 @@ return
 ^+!s::
 	Send ¯\_(ツ)_/¯
 return
+
+; If you know what I mean ;) (ctrl + shift + alt + i)
+^+!i::
+	Send if you know what I mean `;)
+return

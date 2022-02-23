@@ -25,8 +25,21 @@ return
 	Send, w
 return
 
+
 ; Publish using ctrl + shift + p
 ^+p::
 	Send, !Bh{enter}
 return
 
+
+; Try Catch using ctrl + shift + alt + the
+^+!t::
+	Send,			try`n
+	Send,            {{}`n`n
+	Send,            {}}`n
+	Send,            catch (Exception exception)`n
+	Send,            {{}`n
+	Send,                AppendToLog(exception.Message);`n
+	Send,            {}}
+	Send,			{Up}{Up}{Up}{Up}{Up}
+return

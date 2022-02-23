@@ -13,7 +13,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	clipboard = %ClipboardTempVar%
 return
 
-; Copy Line using ctrl + shift + r
+; Ready to merge using ctrl + shift + r
 ^+r::
 	Send, Looks nominal to me, RTM :thumbsup:
 return

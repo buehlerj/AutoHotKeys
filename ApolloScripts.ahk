@@ -10,29 +10,32 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-Core
 	Sleep, 2000
-	Send npm run serve-ie {enter}
+	Send ng s {enter}
 
 	; Clinical
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-Clinical
 
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-Clinical
 	Sleep, 2000
-	Send npm run serve-ie {enter}
+	Send ng s {enter}
 
 	; Mobile
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-mobile
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-mobile
 	Sleep, 2000
-	Send npm run serve-android {enter}
+	; Send npm run serve-android {enter}
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-mobile
 	Sleep, 2000
-	Send npm run serve-ios {enter}
+	; Send npm run serve-ios {enter}
 	
 	; Dataservices
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\dataservices
 
 	; Database
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-database
+
+	; Capture
+	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-capture-v2
 Return
 
 ; Use Apollo IP with ctrl + shift + i
