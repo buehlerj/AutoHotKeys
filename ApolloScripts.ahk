@@ -36,6 +36,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 	; Capture
 	Run,  D:\Program Files\Git\git-bash.exe, C:\Users\jbuehler\workspace\arcc-capture-v2
+
+	Run, explorer "C:\Users\jbuehler\Documents\workspace"
 Return
 
 ; Use Apollo IP with ctrl + shift + i
