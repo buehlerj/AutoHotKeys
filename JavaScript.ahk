@@ -3,15 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Console Log using ctrl + shift + alt + c
+^+!c::
+	Send, console.log();{left}{left}
+return
 
-WorkspaceENV = D:\Users\Jeffrey\Documents\Inetpub
-
-
-; Opens, builds, and closes ECP_Root
-^+!e::
-	Run, %WorkspaceENV%\ECP_Root\ECP_Root.sln
-	Sleep, 5000
-	Send, {alt}BR
-	Sleep, 2500
-	Send, {alt down}{f4}{alt up}
-Return

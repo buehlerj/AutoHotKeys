@@ -16,7 +16,7 @@ return
 ; Power Options (alt + p)
 !p::
 	Run, control
-	Sleep, 1000
+	Sleep, 2000
 	Send, power {enter}
 return
 
