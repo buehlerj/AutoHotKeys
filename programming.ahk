@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; Copy Line using ctrl + shift + c
+; Copy Line using ctrl + alt + c
 ^+!c::
 	ClipboardTempVar := clipboard
 	Send, {home}{home}

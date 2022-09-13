@@ -33,3 +33,8 @@ return
 	SetTimer, RemoveToolTip, Off
 	ToolTip
 return
+
+; Open In Notepad++ (ctrl + shift + n)
+^+n::
+	Send +{F10}{N}{Enter}
+return
