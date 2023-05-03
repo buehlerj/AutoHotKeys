@@ -13,6 +13,11 @@ return
 	Send {Volume_Down}
 return
 
+; Volume Normalized (ctrl + shift + alt + l)
+^+!l::
+	SoundSet, 30
+return
+
 ; Power Options (alt + p)
 !p::
 	Run, control
